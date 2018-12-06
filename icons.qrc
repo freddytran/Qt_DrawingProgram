@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Icons/circle.png</file>
+        <file>Icons/grabber.png</file>
+        <file>Icons/rectangle.png</file>
+        <file>circle.cpp</file>
+        <file>circle.h</file>
+        <file>graphicsobject.cpp</file>
+        <file>graphicsobject.h</file>
+        <file>graphicsobjectsmap.cpp</file>
+        <file>graphicsobjectsmap.h</file>
+        <file>graphicsscene.cpp</file>
+        <file>graphicsscene.h</file>
+        <file>main.cpp</file>
+        <file>mainwindow.cpp</file>
+        <file>mainwindow.h</file>
+        <file>rectangle.cpp</file>
+        <file>rectangle.h</file>
+        <file>tools.cpp</file>
+        <file>tools.h</file>
+        <file>Icons/print.png</file>
+        <file>Icons/add.png</file>
+        <file>Icons/polygon.png</file>
+        <file>Icons/Polygon.png</file>
+        <file>Icons/Polygon2.png</file>
+    </qresource>
+</RCC>

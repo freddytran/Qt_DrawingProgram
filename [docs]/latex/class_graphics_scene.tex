@@ -1,0 +1,165 @@
+\hypertarget{class_graphics_scene}{}\section{Graphics\+Scene Class Reference}
+\label{class_graphics_scene}\index{Graphics\+Scene@{Graphics\+Scene}}
+
+
+The \hyperlink{class_graphics_scene}{Graphics\+Scene} class -\/ Klasse für die \hyperlink{class_graphics_scene}{Graphics\+Scene} abgeleitet von Q\+Graphics\+Scene.  
+
+
+
+
+{\ttfamily \#include $<$graphicsscene.\+h$>$}
+
+Inheritance diagram for Graphics\+Scene\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_graphics_scene}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_graphics_scene_aee2d967bd98adf009edf0ecd08cec189}{send\+Mouse\+Position} (Q\+PointF mouse\+\_\+position)
+\begin{DoxyCompactList}\small\item\em send\+Mouse\+Position -\/ Signal, dass die Positionsdaten des Cursors aussendet. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_scene_ac781d598feae85b0a0c6a90c30f914bd}{send\+Mouse\+Clicked\+Position} (Q\+PointF mouse\+\_\+clicked\+\_\+position)
+\begin{DoxyCompactList}\small\item\em send\+Mouse\+Clicked\+Position -\/ Signal, dass die Positionsdaten des Cursors aussenden sobald geklickt wird. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_graphics_scene_a5a6ac24fb693cce13e3d69c0c38311c9}{Graphics\+Scene} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_graphics_scene_a5a6ac24fb693cce13e3d69c0c38311c9}{Graphics\+Scene\+::\+Graphics\+Scene}. Scene in der die Rechteck \& Kreis -\/ Objekte erstellt werden. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_scene_a68d455a648fe4a6717a1771c7fe04f31}{mouse\+Press\+Event} (Q\+Graphics\+Scene\+Mouse\+Event $\ast$mouse\+Event)
+\begin{DoxyCompactList}\small\item\em mouse\+Press\+Event \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_scene_aadc9534ab8b8fbb5e7c02a0b761c750a}{mouse\+Release\+Event} (Q\+Graphics\+Scene\+Mouse\+Event $\ast$mouse\+Event)
+\begin{DoxyCompactList}\small\item\em mouse\+Release\+Event \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_scene_a85927a0baa140f37d2c918866c6879f1}{mouse\+Move\+Event} (Q\+Graphics\+Scene\+Mouse\+Event $\ast$mouse\+Event)
+\begin{DoxyCompactList}\small\item\em mouse\+Move\+Event \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tools_ab031688a77e89a80ce8b5db7014684a3}{Tools\+::\+Draw\+Tool} \hyperlink{class_graphics_scene_aea13f23ba3e463916435ec72eb381207}{m\+\_\+active\+Tool}
+\item 
+\hyperlink{class_tools_a4b55b2ca4eef4d80ae1042233832bb8b}{Tools\+::\+Option\+Tool} \hyperlink{class_graphics_scene_ad17292fb79972e11c2a829da9baf3dca}{m\+\_\+active\+Option\+Tool}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_graphics_scene}{Graphics\+Scene} class -\/ Klasse für die \hyperlink{class_graphics_scene}{Graphics\+Scene} abgeleitet von Q\+Graphics\+Scene. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_graphics_scene_a5a6ac24fb693cce13e3d69c0c38311c9}\label{class_graphics_scene_a5a6ac24fb693cce13e3d69c0c38311c9}} 
+\index{Graphics\+Scene@{Graphics\+Scene}!Graphics\+Scene@{Graphics\+Scene}}
+\index{Graphics\+Scene@{Graphics\+Scene}!Graphics\+Scene@{Graphics\+Scene}}
+\subsubsection{\texorpdfstring{Graphics\+Scene()}{GraphicsScene()}}
+{\footnotesize\ttfamily Graphics\+Scene\+::\+Graphics\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_graphics_scene_a5a6ac24fb693cce13e3d69c0c38311c9}{Graphics\+Scene\+::\+Graphics\+Scene}. Scene in der die Rechteck \& Kreis -\/ Objekte erstellt werden. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graphics_scene_a85927a0baa140f37d2c918866c6879f1}\label{class_graphics_scene_a85927a0baa140f37d2c918866c6879f1}} 
+\index{Graphics\+Scene@{Graphics\+Scene}!mouse\+Move\+Event@{mouse\+Move\+Event}}
+\index{mouse\+Move\+Event@{mouse\+Move\+Event}!Graphics\+Scene@{Graphics\+Scene}}
+\subsubsection{\texorpdfstring{mouse\+Move\+Event()}{mouseMoveEvent()}}
+{\footnotesize\ttfamily void Graphics\+Scene\+::mouse\+Move\+Event (\begin{DoxyParamCaption}\item[{Q\+Graphics\+Scene\+Mouse\+Event $\ast$}]{mouse\+Event }\end{DoxyParamCaption})}
+
+
+
+mouse\+Move\+Event 
+
+\hyperlink{class_graphics_scene_a85927a0baa140f37d2c918866c6879f1}{Graphics\+Scene\+::mouse\+Move\+Event} -\/ Methode die ausgeführt wird wenn sich die Maus innerhalb der \hyperlink{class_graphics_scene}{Graphics\+Scene} bewegt.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Event} & \\
+\hline
+\end{DoxyParams}
+$<$Sendet Signal aus mit den Positionsdaten des Cursors \mbox{\Hypertarget{class_graphics_scene_a68d455a648fe4a6717a1771c7fe04f31}\label{class_graphics_scene_a68d455a648fe4a6717a1771c7fe04f31}} 
+\index{Graphics\+Scene@{Graphics\+Scene}!mouse\+Press\+Event@{mouse\+Press\+Event}}
+\index{mouse\+Press\+Event@{mouse\+Press\+Event}!Graphics\+Scene@{Graphics\+Scene}}
+\subsubsection{\texorpdfstring{mouse\+Press\+Event()}{mousePressEvent()}}
+{\footnotesize\ttfamily void Graphics\+Scene\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{Q\+Graphics\+Scene\+Mouse\+Event $\ast$}]{mouse\+Event }\end{DoxyParamCaption})}
+
+
+
+mouse\+Press\+Event 
+
+\hyperlink{class_graphics_scene_a68d455a648fe4a6717a1771c7fe04f31}{Graphics\+Scene\+::mouse\+Press\+Event}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Event} & \\
+\hline
+\end{DoxyParams}
+button() gibt den Button zurück der das Event ausgelöst hat. Diese if -\/ Anweisung wird aufgerufen wenn die linke Maustaste gedrückt wird
+
+Fall, sobald das \hyperlink{class_polygon}{Polygon} ausgwählt wurde und auf der Scene mit der Maus geklickt wird.\mbox{\Hypertarget{class_graphics_scene_aadc9534ab8b8fbb5e7c02a0b761c750a}\label{class_graphics_scene_aadc9534ab8b8fbb5e7c02a0b761c750a}} 
+\index{Graphics\+Scene@{Graphics\+Scene}!mouse\+Release\+Event@{mouse\+Release\+Event}}
+\index{mouse\+Release\+Event@{mouse\+Release\+Event}!Graphics\+Scene@{Graphics\+Scene}}
+\subsubsection{\texorpdfstring{mouse\+Release\+Event()}{mouseReleaseEvent()}}
+{\footnotesize\ttfamily void Graphics\+Scene\+::mouse\+Release\+Event (\begin{DoxyParamCaption}\item[{Q\+Graphics\+Scene\+Mouse\+Event $\ast$}]{mouse\+Event }\end{DoxyParamCaption})}
+
+
+
+mouse\+Release\+Event 
+
+\hyperlink{class_graphics_scene_aadc9534ab8b8fbb5e7c02a0b761c750a}{Graphics\+Scene\+::mouse\+Release\+Event}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Event} & \\
+\hline
+\end{DoxyParams}
+button() gibt den Button zurück der das Event ausgelöst hat. Wenn dieser Button der Linke Maus\+Button war dann wird der q\+Debug ausgegeben.\mbox{\Hypertarget{class_graphics_scene_ac781d598feae85b0a0c6a90c30f914bd}\label{class_graphics_scene_ac781d598feae85b0a0c6a90c30f914bd}} 
+\index{Graphics\+Scene@{Graphics\+Scene}!send\+Mouse\+Clicked\+Position@{send\+Mouse\+Clicked\+Position}}
+\index{send\+Mouse\+Clicked\+Position@{send\+Mouse\+Clicked\+Position}!Graphics\+Scene@{Graphics\+Scene}}
+\subsubsection{\texorpdfstring{send\+Mouse\+Clicked\+Position}{sendMouseClickedPosition}}
+{\footnotesize\ttfamily void Graphics\+Scene\+::send\+Mouse\+Clicked\+Position (\begin{DoxyParamCaption}\item[{Q\+PointF}]{mouse\+\_\+clicked\+\_\+position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+send\+Mouse\+Clicked\+Position -\/ Signal, dass die Positionsdaten des Cursors aussenden sobald geklickt wird. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+clicked\+\_\+position} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graphics_scene_aee2d967bd98adf009edf0ecd08cec189}\label{class_graphics_scene_aee2d967bd98adf009edf0ecd08cec189}} 
+\index{Graphics\+Scene@{Graphics\+Scene}!send\+Mouse\+Position@{send\+Mouse\+Position}}
+\index{send\+Mouse\+Position@{send\+Mouse\+Position}!Graphics\+Scene@{Graphics\+Scene}}
+\subsubsection{\texorpdfstring{send\+Mouse\+Position}{sendMousePosition}}
+{\footnotesize\ttfamily void Graphics\+Scene\+::send\+Mouse\+Position (\begin{DoxyParamCaption}\item[{Q\+PointF}]{mouse\+\_\+position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+send\+Mouse\+Position -\/ Signal, dass die Positionsdaten des Cursors aussendet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+position} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_graphics_scene_ad17292fb79972e11c2a829da9baf3dca}\label{class_graphics_scene_ad17292fb79972e11c2a829da9baf3dca}} 
+\index{Graphics\+Scene@{Graphics\+Scene}!m\+\_\+active\+Option\+Tool@{m\+\_\+active\+Option\+Tool}}
+\index{m\+\_\+active\+Option\+Tool@{m\+\_\+active\+Option\+Tool}!Graphics\+Scene@{Graphics\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+active\+Option\+Tool}{m\_activeOptionTool}}
+{\footnotesize\ttfamily \hyperlink{class_tools_a4b55b2ca4eef4d80ae1042233832bb8b}{Tools\+::\+Option\+Tool} Graphics\+Scene\+::m\+\_\+active\+Option\+Tool\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_graphics_scene_aea13f23ba3e463916435ec72eb381207}\label{class_graphics_scene_aea13f23ba3e463916435ec72eb381207}} 
+\index{Graphics\+Scene@{Graphics\+Scene}!m\+\_\+active\+Tool@{m\+\_\+active\+Tool}}
+\index{m\+\_\+active\+Tool@{m\+\_\+active\+Tool}!Graphics\+Scene@{Graphics\+Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+active\+Tool}{m\_activeTool}}
+{\footnotesize\ttfamily \hyperlink{class_tools_ab031688a77e89a80ce8b5db7014684a3}{Tools\+::\+Draw\+Tool} Graphics\+Scene\+::m\+\_\+active\+Tool\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tranb/\+Desktop/\+Sciebo/\+Studium/\+Qt Projekte/\+Graphic\+Obj/\hyperlink{graphicsscene_8h}{graphicsscene.\+h}\item 
+C\+:/\+Users/tranb/\+Desktop/\+Sciebo/\+Studium/\+Qt Projekte/\+Graphic\+Obj/\hyperlink{graphicsscene_8cpp}{graphicsscene.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,452 @@
+\hypertarget{class_tools}{}\section{Tools Class Reference}
+\label{class_tools}\index{Tools@{Tools}}
+
+
+The \hyperlink{class_tools}{Tools} class -\/ Klasse für die Zeichenwerkzeuge und Einstellung von Füllfarbe und Rahmenfarbe.  
+
+
+
+
+{\ttfamily \#include $<$tools.\+h$>$}
+
+Inheritance diagram for Tools\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tools}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_tools_a2847c269682818722541d9002fdf0824}{State} \{ \hyperlink{class_tools_a2847c269682818722541d9002fdf0824a39a562c65ff6fde1589fd79d63b16b31}{N\+O\+N\+E\+\_\+\+A\+C\+T\+I\+VE}, 
+\hyperlink{class_tools_a2847c269682818722541d9002fdf0824ad6c9098c08b610749e430f97f83f95bd}{G\+R\+A\+B\+B\+E\+R\+\_\+\+A\+C\+T\+I\+VE}, 
+\hyperlink{class_tools_a2847c269682818722541d9002fdf0824a19672b3e28d4946b8edd3b42bd20508a}{R\+E\+C\+T\+\_\+\+A\+C\+T\+I\+VE}, 
+\hyperlink{class_tools_a2847c269682818722541d9002fdf0824af205a7ab0929002ae4bec7fae92a31e1}{C\+I\+R\+C\+\_\+\+A\+C\+T\+I\+VE}
+ \}\begin{DoxyCompactList}\small\item\em The State enum. \end{DoxyCompactList}
+\item 
+enum \hyperlink{class_tools_ab031688a77e89a80ce8b5db7014684a3}{Draw\+Tool} \{ \hyperlink{class_tools_ab031688a77e89a80ce8b5db7014684a3a563beaca84fc18e79f568499ee8fdee7}{G\+R\+A\+B\+B\+ER}, 
+\hyperlink{class_tools_ab031688a77e89a80ce8b5db7014684a3a7608a149cc544834de7d2274fa175237}{C\+I\+R\+C\+LE}, 
+\hyperlink{class_tools_ab031688a77e89a80ce8b5db7014684a3abc11dd73d5c7e1996dbcf0aab00d095b}{R\+E\+C\+T\+A\+N\+G\+LE}, 
+\hyperlink{class_tools_ab031688a77e89a80ce8b5db7014684a3a883ff4bc5dc9f42f40f091328bcf1907}{P\+O\+L\+Y\+G\+ON}
+ \}\begin{DoxyCompactList}\small\item\em The Draw\+Tool enum. \end{DoxyCompactList}
+\item 
+enum \hyperlink{class_tools_a4b55b2ca4eef4d80ae1042233832bb8b}{Option\+Tool} \{ \hyperlink{class_tools_a4b55b2ca4eef4d80ae1042233832bb8ba670c67a855fba32a19f09a8e794d1b8e}{G\+R\+U\+N\+D\+R\+I\+SS}, 
+\hyperlink{class_tools_a4b55b2ca4eef4d80ae1042233832bb8ba53d0273a369699f49786930287a5e675}{M\+O\+E\+B\+EL}
+ \}\begin{DoxyCompactList}\small\item\em The Option\+Tool enum. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_tools_a4912994771a4424b9aec1a7b16d31176}{set\+Fill\+Color} (const Q\+Color \&value)
+\begin{DoxyCompactList}\small\item\em set\+Fill\+Color -\/ Setter Methode für Füllfarbe \end{DoxyCompactList}\item 
+void \hyperlink{class_tools_a94304e05407643ce69f20ba93538d3d5}{set\+Border\+Color} (const Q\+Color \&value)
+\begin{DoxyCompactList}\small\item\em set\+Border\+Color -\/ Setter Methode für Rahmenfarbe \end{DoxyCompactList}\item 
+void \hyperlink{class_tools_abdf68db9740ba504701fe00d97a031e2}{set\+State} (\hyperlink{class_tools_a2847c269682818722541d9002fdf0824}{State} state)
+\begin{DoxyCompactList}\small\item\em set\+State -\/ Setter Methode für State \end{DoxyCompactList}\item 
+void \hyperlink{class_tools_aa53c7186fb6cd6104ff42014b6f44f93}{set\+Draw\+Tool} (const \hyperlink{class_tools_ab031688a77e89a80ce8b5db7014684a3}{Tools\+::\+Draw\+Tool} drawtool)
+\begin{DoxyCompactList}\small\item\em set\+Draw\+Tool -\/ Setter Methode für das Auswahlwerkzeug \end{DoxyCompactList}\item 
+void \hyperlink{class_tools_af69d4aa896ef3e1b06ce65e5df53f060}{set\+Option\+Tool} (const \hyperlink{class_tools_a4b55b2ca4eef4d80ae1042233832bb8b}{Tools\+::\+Option\+Tool} option\+Tool)
+\begin{DoxyCompactList}\small\item\em set\+Option\+Tool -\/ Setter Methode für das Option\+Tool Werkzeug. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_tools_ab5d002810a63050d8a7fd2e1b19b2ba0}{active\+Draw\+Tool\+Changed} (const \hyperlink{class_tools_ab031688a77e89a80ce8b5db7014684a3}{Tools\+::\+Draw\+Tool} \&value)
+\begin{DoxyCompactList}\small\item\em active\+Draw\+Tool\+Changed -\/ Signal, das aussendet wenn ein Auswahlwerkzeug geändert wurde. \end{DoxyCompactList}\item 
+void \hyperlink{class_tools_a3feb94811769e2b47a1e9ad543bda1f8}{active\+Border\+Color\+Changed} (Q\+Color color)
+\begin{DoxyCompactList}\small\item\em active\+Border\+Color\+Changed -\/ Signal, das aussendet wenn die Rahmenfarbe geändert wurde \end{DoxyCompactList}\item 
+void \hyperlink{class_tools_a1330acf72b4e751cb873d6538cc5ef2d}{active\+Fill\+Color\+Changed} (Q\+Color color)
+\begin{DoxyCompactList}\small\item\em active\+Fill\+Color\+Changed -\/\+Signal, das aussendet wenn die Füllfarbe geänert wurde \end{DoxyCompactList}\item 
+void \hyperlink{class_tools_a6ea189495868e06c89d79b36d09b43d7}{active\+Option\+Tool\+Changed} (const \hyperlink{class_tools_a4b55b2ca4eef4d80ae1042233832bb8b}{Tools\+::\+Option\+Tool} \&value)
+\begin{DoxyCompactList}\small\item\em active\+Option\+Tool\+Changed -\/ Getter -\/ Methode für das Option\+Tool Werkzeug. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tools_a33adedcb5a43ffd5a1b62515b4a3db2c}{Tools} (Q\+Object $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_tools_a33adedcb5a43ffd5a1b62515b4a3db2c}{Tools\+::\+Tools} Konstruktor. \end{DoxyCompactList}\item 
+Q\+Color \hyperlink{class_tools_a263df3826bfd5975d1e379060ea554dc}{get\+Border\+Color} () const
+\begin{DoxyCompactList}\small\item\em Getter -\/ Methode für Border\+Color. \end{DoxyCompactList}\item 
+Q\+Color \hyperlink{class_tools_acb1e17bcb34c9290423b55a7f92d9936}{get\+Fill\+Color} () const
+\begin{DoxyCompactList}\small\item\em Getter -\/ Methode für Fill\+Color. \end{DoxyCompactList}\item 
+\hyperlink{class_tools_a2847c269682818722541d9002fdf0824}{State} \hyperlink{class_tools_ae81ec47ff47279c8a8f319d822c3bb9f}{get\+State} ()
+\begin{DoxyCompactList}\small\item\em get\+State \end{DoxyCompactList}\item 
+\hyperlink{class_tools_ab031688a77e89a80ce8b5db7014684a3}{Draw\+Tool} \hyperlink{class_tools_a4e8bdc1c74c1d9b5969c6b8afef0f805}{get\+Draw\+Tool} ()
+\begin{DoxyCompactList}\small\item\em get\+Draw\+Tool -\/ Setter Methode für das Auswahlwerkzeug \end{DoxyCompactList}\item 
+\hyperlink{class_tools_a4b55b2ca4eef4d80ae1042233832bb8b}{Option\+Tool} \hyperlink{class_tools_a45d1e69e6f93c92df35756f3b48092ca}{get\+Option\+Tool} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_tools_a45d1e69e6f93c92df35756f3b48092ca}{Tools\+::get\+Option\+Tool} -\/ Getter -\/ Methode, welche das Optionwerkzeug zurückgibt. (Grundriss oder Moebel) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tools_ab031688a77e89a80ce8b5db7014684a3}{Tools\+::\+Draw\+Tool} \hyperlink{class_tools_a8777299234b214fb917f42c0ef1a0ead}{werkzeug}
+\item 
+\hyperlink{class_tools_a4b55b2ca4eef4d80ae1042233832bb8b}{Tools\+::\+Option\+Tool} \hyperlink{class_tools_a9bf140c9c0af40044aaa2c115b632399}{option}
+\item 
+\hyperlink{class_tools_a2847c269682818722541d9002fdf0824}{State} \hyperlink{class_tools_a9ee6b69697a16133db9d1f24346cd838}{status}
+\item 
+Q\+Color \hyperlink{class_tools_af7de157c4f6575664512accd32d93a43}{border\+Color}
+\item 
+Q\+Color \hyperlink{class_tools_a522e6149eb1349df97fa1bb7abaec427}{fill\+Color}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_tools}{Tools} class -\/ Klasse für die Zeichenwerkzeuge und Einstellung von Füllfarbe und Rahmenfarbe. 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_tools_ab031688a77e89a80ce8b5db7014684a3}\label{class_tools_ab031688a77e89a80ce8b5db7014684a3}} 
+\index{Tools@{Tools}!Draw\+Tool@{Draw\+Tool}}
+\index{Draw\+Tool@{Draw\+Tool}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{Draw\+Tool}{DrawTool}}
+{\footnotesize\ttfamily enum \hyperlink{class_tools_ab031688a77e89a80ce8b5db7014684a3}{Tools\+::\+Draw\+Tool}}
+
+
+
+The Draw\+Tool enum. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+R\+A\+B\+B\+ER@{G\+R\+A\+B\+B\+ER}!Tools@{Tools}}\index{Tools@{Tools}!G\+R\+A\+B\+B\+ER@{G\+R\+A\+B\+B\+ER}}}\mbox{\Hypertarget{class_tools_ab031688a77e89a80ce8b5db7014684a3a563beaca84fc18e79f568499ee8fdee7}\label{class_tools_ab031688a77e89a80ce8b5db7014684a3a563beaca84fc18e79f568499ee8fdee7}} 
+G\+R\+A\+B\+B\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+I\+R\+C\+LE@{C\+I\+R\+C\+LE}!Tools@{Tools}}\index{Tools@{Tools}!C\+I\+R\+C\+LE@{C\+I\+R\+C\+LE}}}\mbox{\Hypertarget{class_tools_ab031688a77e89a80ce8b5db7014684a3a7608a149cc544834de7d2274fa175237}\label{class_tools_ab031688a77e89a80ce8b5db7014684a3a7608a149cc544834de7d2274fa175237}} 
+C\+I\+R\+C\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+C\+T\+A\+N\+G\+LE@{R\+E\+C\+T\+A\+N\+G\+LE}!Tools@{Tools}}\index{Tools@{Tools}!R\+E\+C\+T\+A\+N\+G\+LE@{R\+E\+C\+T\+A\+N\+G\+LE}}}\mbox{\Hypertarget{class_tools_ab031688a77e89a80ce8b5db7014684a3abc11dd73d5c7e1996dbcf0aab00d095b}\label{class_tools_ab031688a77e89a80ce8b5db7014684a3abc11dd73d5c7e1996dbcf0aab00d095b}} 
+R\+E\+C\+T\+A\+N\+G\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+O\+L\+Y\+G\+ON@{P\+O\+L\+Y\+G\+ON}!Tools@{Tools}}\index{Tools@{Tools}!P\+O\+L\+Y\+G\+ON@{P\+O\+L\+Y\+G\+ON}}}\mbox{\Hypertarget{class_tools_ab031688a77e89a80ce8b5db7014684a3a883ff4bc5dc9f42f40f091328bcf1907}\label{class_tools_ab031688a77e89a80ce8b5db7014684a3a883ff4bc5dc9f42f40f091328bcf1907}} 
+P\+O\+L\+Y\+G\+ON&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_tools_a4b55b2ca4eef4d80ae1042233832bb8b}\label{class_tools_a4b55b2ca4eef4d80ae1042233832bb8b}} 
+\index{Tools@{Tools}!Option\+Tool@{Option\+Tool}}
+\index{Option\+Tool@{Option\+Tool}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{Option\+Tool}{OptionTool}}
+{\footnotesize\ttfamily enum \hyperlink{class_tools_a4b55b2ca4eef4d80ae1042233832bb8b}{Tools\+::\+Option\+Tool}}
+
+
+
+The Option\+Tool enum. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+R\+U\+N\+D\+R\+I\+SS@{G\+R\+U\+N\+D\+R\+I\+SS}!Tools@{Tools}}\index{Tools@{Tools}!G\+R\+U\+N\+D\+R\+I\+SS@{G\+R\+U\+N\+D\+R\+I\+SS}}}\mbox{\Hypertarget{class_tools_a4b55b2ca4eef4d80ae1042233832bb8ba670c67a855fba32a19f09a8e794d1b8e}\label{class_tools_a4b55b2ca4eef4d80ae1042233832bb8ba670c67a855fba32a19f09a8e794d1b8e}} 
+G\+R\+U\+N\+D\+R\+I\+SS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+O\+E\+B\+EL@{M\+O\+E\+B\+EL}!Tools@{Tools}}\index{Tools@{Tools}!M\+O\+E\+B\+EL@{M\+O\+E\+B\+EL}}}\mbox{\Hypertarget{class_tools_a4b55b2ca4eef4d80ae1042233832bb8ba53d0273a369699f49786930287a5e675}\label{class_tools_a4b55b2ca4eef4d80ae1042233832bb8ba53d0273a369699f49786930287a5e675}} 
+M\+O\+E\+B\+EL&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_tools_a2847c269682818722541d9002fdf0824}\label{class_tools_a2847c269682818722541d9002fdf0824}} 
+\index{Tools@{Tools}!State@{State}}
+\index{State@{State}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily enum \hyperlink{class_tools_a2847c269682818722541d9002fdf0824}{Tools\+::\+State}}
+
+
+
+The State enum. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+N\+E\+\_\+\+A\+C\+T\+I\+VE@{N\+O\+N\+E\+\_\+\+A\+C\+T\+I\+VE}!Tools@{Tools}}\index{Tools@{Tools}!N\+O\+N\+E\+\_\+\+A\+C\+T\+I\+VE@{N\+O\+N\+E\+\_\+\+A\+C\+T\+I\+VE}}}\mbox{\Hypertarget{class_tools_a2847c269682818722541d9002fdf0824a39a562c65ff6fde1589fd79d63b16b31}\label{class_tools_a2847c269682818722541d9002fdf0824a39a562c65ff6fde1589fd79d63b16b31}} 
+N\+O\+N\+E\+\_\+\+A\+C\+T\+I\+VE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+R\+A\+B\+B\+E\+R\+\_\+\+A\+C\+T\+I\+VE@{G\+R\+A\+B\+B\+E\+R\+\_\+\+A\+C\+T\+I\+VE}!Tools@{Tools}}\index{Tools@{Tools}!G\+R\+A\+B\+B\+E\+R\+\_\+\+A\+C\+T\+I\+VE@{G\+R\+A\+B\+B\+E\+R\+\_\+\+A\+C\+T\+I\+VE}}}\mbox{\Hypertarget{class_tools_a2847c269682818722541d9002fdf0824ad6c9098c08b610749e430f97f83f95bd}\label{class_tools_a2847c269682818722541d9002fdf0824ad6c9098c08b610749e430f97f83f95bd}} 
+G\+R\+A\+B\+B\+E\+R\+\_\+\+A\+C\+T\+I\+VE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+C\+T\+\_\+\+A\+C\+T\+I\+VE@{R\+E\+C\+T\+\_\+\+A\+C\+T\+I\+VE}!Tools@{Tools}}\index{Tools@{Tools}!R\+E\+C\+T\+\_\+\+A\+C\+T\+I\+VE@{R\+E\+C\+T\+\_\+\+A\+C\+T\+I\+VE}}}\mbox{\Hypertarget{class_tools_a2847c269682818722541d9002fdf0824a19672b3e28d4946b8edd3b42bd20508a}\label{class_tools_a2847c269682818722541d9002fdf0824a19672b3e28d4946b8edd3b42bd20508a}} 
+R\+E\+C\+T\+\_\+\+A\+C\+T\+I\+VE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+I\+R\+C\+\_\+\+A\+C\+T\+I\+VE@{C\+I\+R\+C\+\_\+\+A\+C\+T\+I\+VE}!Tools@{Tools}}\index{Tools@{Tools}!C\+I\+R\+C\+\_\+\+A\+C\+T\+I\+VE@{C\+I\+R\+C\+\_\+\+A\+C\+T\+I\+VE}}}\mbox{\Hypertarget{class_tools_a2847c269682818722541d9002fdf0824af205a7ab0929002ae4bec7fae92a31e1}\label{class_tools_a2847c269682818722541d9002fdf0824af205a7ab0929002ae4bec7fae92a31e1}} 
+C\+I\+R\+C\+\_\+\+A\+C\+T\+I\+VE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_tools_a33adedcb5a43ffd5a1b62515b4a3db2c}\label{class_tools_a33adedcb5a43ffd5a1b62515b4a3db2c}} 
+\index{Tools@{Tools}!Tools@{Tools}}
+\index{Tools@{Tools}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{Tools()}{Tools()}}
+{\footnotesize\ttfamily Tools\+::\+Tools (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\hyperlink{class_tools_a33adedcb5a43ffd5a1b62515b4a3db2c}{Tools\+::\+Tools} Konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tools_a3feb94811769e2b47a1e9ad543bda1f8}\label{class_tools_a3feb94811769e2b47a1e9ad543bda1f8}} 
+\index{Tools@{Tools}!active\+Border\+Color\+Changed@{active\+Border\+Color\+Changed}}
+\index{active\+Border\+Color\+Changed@{active\+Border\+Color\+Changed}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{active\+Border\+Color\+Changed}{activeBorderColorChanged}}
+{\footnotesize\ttfamily void Tools\+::active\+Border\+Color\+Changed (\begin{DoxyParamCaption}\item[{Q\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+active\+Border\+Color\+Changed -\/ Signal, das aussendet wenn die Rahmenfarbe geändert wurde 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tools_ab5d002810a63050d8a7fd2e1b19b2ba0}\label{class_tools_ab5d002810a63050d8a7fd2e1b19b2ba0}} 
+\index{Tools@{Tools}!active\+Draw\+Tool\+Changed@{active\+Draw\+Tool\+Changed}}
+\index{active\+Draw\+Tool\+Changed@{active\+Draw\+Tool\+Changed}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{active\+Draw\+Tool\+Changed}{activeDrawToolChanged}}
+{\footnotesize\ttfamily void Tools\+::active\+Draw\+Tool\+Changed (\begin{DoxyParamCaption}\item[{const \hyperlink{class_tools_ab031688a77e89a80ce8b5db7014684a3}{Tools\+::\+Draw\+Tool} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+active\+Draw\+Tool\+Changed -\/ Signal, das aussendet wenn ein Auswahlwerkzeug geändert wurde. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tools_a1330acf72b4e751cb873d6538cc5ef2d}\label{class_tools_a1330acf72b4e751cb873d6538cc5ef2d}} 
+\index{Tools@{Tools}!active\+Fill\+Color\+Changed@{active\+Fill\+Color\+Changed}}
+\index{active\+Fill\+Color\+Changed@{active\+Fill\+Color\+Changed}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{active\+Fill\+Color\+Changed}{activeFillColorChanged}}
+{\footnotesize\ttfamily void Tools\+::active\+Fill\+Color\+Changed (\begin{DoxyParamCaption}\item[{Q\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+active\+Fill\+Color\+Changed -\/\+Signal, das aussendet wenn die Füllfarbe geänert wurde 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tools_a6ea189495868e06c89d79b36d09b43d7}\label{class_tools_a6ea189495868e06c89d79b36d09b43d7}} 
+\index{Tools@{Tools}!active\+Option\+Tool\+Changed@{active\+Option\+Tool\+Changed}}
+\index{active\+Option\+Tool\+Changed@{active\+Option\+Tool\+Changed}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{active\+Option\+Tool\+Changed}{activeOptionToolChanged}}
+{\footnotesize\ttfamily void Tools\+::active\+Option\+Tool\+Changed (\begin{DoxyParamCaption}\item[{const \hyperlink{class_tools_a4b55b2ca4eef4d80ae1042233832bb8b}{Tools\+::\+Option\+Tool} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+active\+Option\+Tool\+Changed -\/ Getter -\/ Methode für das Option\+Tool Werkzeug. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tools_a263df3826bfd5975d1e379060ea554dc}\label{class_tools_a263df3826bfd5975d1e379060ea554dc}} 
+\index{Tools@{Tools}!get\+Border\+Color@{get\+Border\+Color}}
+\index{get\+Border\+Color@{get\+Border\+Color}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{get\+Border\+Color()}{getBorderColor()}}
+{\footnotesize\ttfamily Q\+Color Tools\+::get\+Border\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter -\/ Methode für Border\+Color. 
+
+\hyperlink{class_tools_a263df3826bfd5975d1e379060ea554dc}{Tools\+::get\+Border\+Color}.
+
+\begin{DoxyReturn}{Returns}
+border\+Color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tools_a4e8bdc1c74c1d9b5969c6b8afef0f805}\label{class_tools_a4e8bdc1c74c1d9b5969c6b8afef0f805}} 
+\index{Tools@{Tools}!get\+Draw\+Tool@{get\+Draw\+Tool}}
+\index{get\+Draw\+Tool@{get\+Draw\+Tool}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{get\+Draw\+Tool()}{getDrawTool()}}
+{\footnotesize\ttfamily \hyperlink{class_tools_ab031688a77e89a80ce8b5db7014684a3}{Tools\+::\+Draw\+Tool} Tools\+::get\+Draw\+Tool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Draw\+Tool -\/ Setter Methode für das Auswahlwerkzeug 
+
+\hyperlink{class_tools_a4e8bdc1c74c1d9b5969c6b8afef0f805}{Tools\+::get\+Draw\+Tool} -\/ Getter -\/ Methode, welche das Zeichenwerkzeug zurückgibt.
+
+\begin{DoxyReturn}{Returns}
+
+
+werkzeug 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tools_acb1e17bcb34c9290423b55a7f92d9936}\label{class_tools_acb1e17bcb34c9290423b55a7f92d9936}} 
+\index{Tools@{Tools}!get\+Fill\+Color@{get\+Fill\+Color}}
+\index{get\+Fill\+Color@{get\+Fill\+Color}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{get\+Fill\+Color()}{getFillColor()}}
+{\footnotesize\ttfamily Q\+Color Tools\+::get\+Fill\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter -\/ Methode für Fill\+Color. 
+
+\hyperlink{class_tools_acb1e17bcb34c9290423b55a7f92d9936}{Tools\+::get\+Fill\+Color}.
+
+\begin{DoxyReturn}{Returns}
+fill\+Color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tools_a45d1e69e6f93c92df35756f3b48092ca}\label{class_tools_a45d1e69e6f93c92df35756f3b48092ca}} 
+\index{Tools@{Tools}!get\+Option\+Tool@{get\+Option\+Tool}}
+\index{get\+Option\+Tool@{get\+Option\+Tool}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{get\+Option\+Tool()}{getOptionTool()}}
+{\footnotesize\ttfamily \hyperlink{class_tools_a4b55b2ca4eef4d80ae1042233832bb8b}{Tools\+::\+Option\+Tool} Tools\+::get\+Option\+Tool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_tools_a45d1e69e6f93c92df35756f3b48092ca}{Tools\+::get\+Option\+Tool} -\/ Getter -\/ Methode, welche das Optionwerkzeug zurückgibt. (Grundriss oder Moebel) 
+
+\begin{DoxyReturn}{Returns}
+option 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tools_ae81ec47ff47279c8a8f319d822c3bb9f}\label{class_tools_ae81ec47ff47279c8a8f319d822c3bb9f}} 
+\index{Tools@{Tools}!get\+State@{get\+State}}
+\index{get\+State@{get\+State}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{get\+State()}{getState()}}
+{\footnotesize\ttfamily \hyperlink{class_tools_a2847c269682818722541d9002fdf0824}{Tools\+::\+State} Tools\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+State 
+
+\hyperlink{class_tools_ae81ec47ff47279c8a8f319d822c3bb9f}{Tools\+::get\+State}.
+
+\begin{DoxyReturn}{Returns}
+
+
+status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tools_a94304e05407643ce69f20ba93538d3d5}\label{class_tools_a94304e05407643ce69f20ba93538d3d5}} 
+\index{Tools@{Tools}!set\+Border\+Color@{set\+Border\+Color}}
+\index{set\+Border\+Color@{set\+Border\+Color}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{set\+Border\+Color}{setBorderColor}}
+{\footnotesize\ttfamily void Tools\+::set\+Border\+Color (\begin{DoxyParamCaption}\item[{const Q\+Color \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+set\+Border\+Color -\/ Setter Methode für Rahmenfarbe 
+
+\hyperlink{class_tools_a94304e05407643ce69f20ba93538d3d5}{Tools\+::set\+Border\+Color}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tools_aa53c7186fb6cd6104ff42014b6f44f93}\label{class_tools_aa53c7186fb6cd6104ff42014b6f44f93}} 
+\index{Tools@{Tools}!set\+Draw\+Tool@{set\+Draw\+Tool}}
+\index{set\+Draw\+Tool@{set\+Draw\+Tool}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{set\+Draw\+Tool}{setDrawTool}}
+{\footnotesize\ttfamily void Tools\+::set\+Draw\+Tool (\begin{DoxyParamCaption}\item[{const \hyperlink{class_tools_ab031688a77e89a80ce8b5db7014684a3}{Tools\+::\+Draw\+Tool}}]{drawtool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+set\+Draw\+Tool -\/ Setter Methode für das Auswahlwerkzeug 
+
+\hyperlink{class_tools_aa53c7186fb6cd6104ff42014b6f44f93}{Tools\+::set\+Draw\+Tool} -\/ Setzt das Zeichenwerkzeug.
+
+
+\begin{DoxyParams}{Parameters}
+{\em drawtool} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tools_a4912994771a4424b9aec1a7b16d31176}\label{class_tools_a4912994771a4424b9aec1a7b16d31176}} 
+\index{Tools@{Tools}!set\+Fill\+Color@{set\+Fill\+Color}}
+\index{set\+Fill\+Color@{set\+Fill\+Color}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{set\+Fill\+Color}{setFillColor}}
+{\footnotesize\ttfamily void Tools\+::set\+Fill\+Color (\begin{DoxyParamCaption}\item[{const Q\+Color \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+set\+Fill\+Color -\/ Setter Methode für Füllfarbe 
+
+\hyperlink{class_tools_a4912994771a4424b9aec1a7b16d31176}{Tools\+::set\+Fill\+Color}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tools_af69d4aa896ef3e1b06ce65e5df53f060}\label{class_tools_af69d4aa896ef3e1b06ce65e5df53f060}} 
+\index{Tools@{Tools}!set\+Option\+Tool@{set\+Option\+Tool}}
+\index{set\+Option\+Tool@{set\+Option\+Tool}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{set\+Option\+Tool}{setOptionTool}}
+{\footnotesize\ttfamily void Tools\+::set\+Option\+Tool (\begin{DoxyParamCaption}\item[{const \hyperlink{class_tools_a4b55b2ca4eef4d80ae1042233832bb8b}{Tools\+::\+Option\+Tool}}]{option\+Tool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+set\+Option\+Tool -\/ Setter Methode für das Option\+Tool Werkzeug. 
+
+\hyperlink{class_tools_af69d4aa896ef3e1b06ce65e5df53f060}{Tools\+::set\+Option\+Tool} -\/ Setzt das Option\+Tool (Grundriss oder Moebel)
+
+
+\begin{DoxyParams}{Parameters}
+{\em option\+Tool} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tools_abdf68db9740ba504701fe00d97a031e2}\label{class_tools_abdf68db9740ba504701fe00d97a031e2}} 
+\index{Tools@{Tools}!set\+State@{set\+State}}
+\index{set\+State@{set\+State}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{set\+State}{setState}}
+{\footnotesize\ttfamily void Tools\+::set\+State (\begin{DoxyParamCaption}\item[{\hyperlink{class_tools_a2847c269682818722541d9002fdf0824}{State}}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+set\+State -\/ Setter Methode für State 
+
+\hyperlink{class_tools_abdf68db9740ba504701fe00d97a031e2}{Tools\+::set\+State}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_tools_af7de157c4f6575664512accd32d93a43}\label{class_tools_af7de157c4f6575664512accd32d93a43}} 
+\index{Tools@{Tools}!border\+Color@{border\+Color}}
+\index{border\+Color@{border\+Color}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{border\+Color}{borderColor}}
+{\footnotesize\ttfamily Q\+Color Tools\+::border\+Color\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_tools_a522e6149eb1349df97fa1bb7abaec427}\label{class_tools_a522e6149eb1349df97fa1bb7abaec427}} 
+\index{Tools@{Tools}!fill\+Color@{fill\+Color}}
+\index{fill\+Color@{fill\+Color}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{fill\+Color}{fillColor}}
+{\footnotesize\ttfamily Q\+Color Tools\+::fill\+Color\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_tools_a9bf140c9c0af40044aaa2c115b632399}\label{class_tools_a9bf140c9c0af40044aaa2c115b632399}} 
+\index{Tools@{Tools}!option@{option}}
+\index{option@{option}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{option}{option}}
+{\footnotesize\ttfamily \hyperlink{class_tools_a4b55b2ca4eef4d80ae1042233832bb8b}{Tools\+::\+Option\+Tool} Tools\+::option\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_tools_a9ee6b69697a16133db9d1f24346cd838}\label{class_tools_a9ee6b69697a16133db9d1f24346cd838}} 
+\index{Tools@{Tools}!status@{status}}
+\index{status@{status}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily \hyperlink{class_tools_a2847c269682818722541d9002fdf0824}{State} Tools\+::status\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_tools_a8777299234b214fb917f42c0ef1a0ead}\label{class_tools_a8777299234b214fb917f42c0ef1a0ead}} 
+\index{Tools@{Tools}!werkzeug@{werkzeug}}
+\index{werkzeug@{werkzeug}!Tools@{Tools}}
+\subsubsection{\texorpdfstring{werkzeug}{werkzeug}}
+{\footnotesize\ttfamily \hyperlink{class_tools_ab031688a77e89a80ce8b5db7014684a3}{Tools\+::\+Draw\+Tool} Tools\+::werkzeug\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tranb/\+Desktop/\+Sciebo/\+Studium/\+Qt Projekte/\+Graphic\+Obj/\hyperlink{tools_8h}{tools.\+h}\item 
+C\+:/\+Users/tranb/\+Desktop/\+Sciebo/\+Studium/\+Qt Projekte/\+Graphic\+Obj/\hyperlink{tools_8cpp}{tools.\+cpp}\end{DoxyCompactItemize}

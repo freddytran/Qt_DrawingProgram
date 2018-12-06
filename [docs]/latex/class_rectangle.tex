@@ -1,0 +1,172 @@
+\hypertarget{class_rectangle}{}\section{Rectangle Class Reference}
+\label{class_rectangle}\index{Rectangle@{Rectangle}}
+
+
+The \hyperlink{class_rectangle}{Rectangle} class -\/ Klasse für das Rechteck Objekt abgeleitet von Graphic Objekt.  
+
+
+
+
+{\ttfamily \#include $<$rectangle.\+h$>$}
+
+Inheritance diagram for Rectangle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_rectangle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_rectangle_a3a431eeb9b63f2108f171416b205f302}{Rectangle} (Q\+Object $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_rectangle}{Rectangle} Kontruktor wid so geändert dass ein Q\+Object $\ast$parent -\/ Parameter erwartet wird. \end{DoxyCompactList}\item 
+\hyperlink{class_rectangle_a07eb215e78b898b77cb843ceb497b46a}{Rectangle} (qreal xkoord, qreal ykoord, qreal width, qreal height, Q\+Color fill, Q\+Color border)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_rectangle}{Rectangle} Konstruktor. \end{DoxyCompactList}\item 
+\hyperlink{class_rectangle_a494c076b13aadf26efdce07d23c61ddd}{$\sim$\+Rectangle} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_rectangle}{Rectangle} Destruktor. \end{DoxyCompactList}\item 
+virtual Q\+Abstract\+Graphics\+Shape\+Item $\ast$ \hyperlink{class_rectangle_aeafbe16d72e37bb155c78a122408d3dc}{graphic\+Shape\+Item} () const
+\begin{DoxyCompactList}\small\item\em graphic\+Shape\+Item \end{DoxyCompactList}\item 
+virtual Q\+String \hyperlink{class_rectangle_a75b1e77ef828ff8de86cfcf6b03bfadb}{to\+String} ()
+\begin{DoxyCompactList}\small\item\em to\+String \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Graphics\+Rect\+Item $\ast$ \hyperlink{class_rectangle_a4d7f03c65f5e27a63a3299aac6da3954}{m\+\_\+graphics\+Rect}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned long \hyperlink{class_rectangle_aa5a0b5d899df185e221e17d032472352}{m\+\_\+rectangle\+Counter} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_rectangle}{Rectangle} class -\/ Klasse für das Rechteck Objekt abgeleitet von Graphic Objekt. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_rectangle_a3a431eeb9b63f2108f171416b205f302}\label{class_rectangle_a3a431eeb9b63f2108f171416b205f302}} 
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\subsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Rectangle\+::\+Rectangle (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_rectangle}{Rectangle} Kontruktor wid so geändert dass ein Q\+Object $\ast$parent -\/ Parameter erwartet wird. 
+
+Konstruktor vom Objekt \hyperlink{class_rectangle}{Rectangle}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rectangle_a07eb215e78b898b77cb843ceb497b46a}\label{class_rectangle_a07eb215e78b898b77cb843ceb497b46a}} 
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\subsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Rectangle\+::\+Rectangle (\begin{DoxyParamCaption}\item[{qreal}]{xkoord,  }\item[{qreal}]{ykoord,  }\item[{qreal}]{width,  }\item[{qreal}]{height,  }\item[{Q\+Color}]{fill,  }\item[{Q\+Color}]{border }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_rectangle}{Rectangle} Konstruktor. 
+
+Dieser Konstruktor ist dafür gemacht, um ein aus den übergebenen Werten ein Q\+Graphic\+Rect\+Item zu machen.
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+{\em dimension} & \\
+\hline
+{\em fill} & \\
+\hline
+{\em border} & \\
+\hline
+{\em xkoord} & \\
+\hline
+{\em ykoord} & \\
+\hline
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+{\em fill} & \\
+\hline
+{\em border} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rectangle_a494c076b13aadf26efdce07d23c61ddd}\label{class_rectangle_a494c076b13aadf26efdce07d23c61ddd}} 
+\index{Rectangle@{Rectangle}!````~Rectangle@{$\sim$\+Rectangle}}
+\index{````~Rectangle@{$\sim$\+Rectangle}!Rectangle@{Rectangle}}
+\subsubsection{\texorpdfstring{$\sim$\+Rectangle()}{~Rectangle()}}
+{\footnotesize\ttfamily Rectangle\+::$\sim$\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_rectangle}{Rectangle} Destruktor. 
+
+Destruktor vom Objekt \hyperlink{class_rectangle}{Rectangle}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rectangle_aeafbe16d72e37bb155c78a122408d3dc}\label{class_rectangle_aeafbe16d72e37bb155c78a122408d3dc}} 
+\index{Rectangle@{Rectangle}!graphic\+Shape\+Item@{graphic\+Shape\+Item}}
+\index{graphic\+Shape\+Item@{graphic\+Shape\+Item}!Rectangle@{Rectangle}}
+\subsubsection{\texorpdfstring{graphic\+Shape\+Item()}{graphicShapeItem()}}
+{\footnotesize\ttfamily Q\+Abstract\+Graphics\+Shape\+Item $\ast$ Rectangle\+::graphic\+Shape\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+graphic\+Shape\+Item 
+
+virtuelle Methode, um das Q\+Graphic\+Rect\+Item wiederzugeben.
+
+\begin{DoxyReturn}{Returns}
+
+
+m\+\_\+graphics\+Rect 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_graphics_object_ad898be2fdbcc4c57f908cdd6a3feaa44}{Graphics\+Object}.
+
+\mbox{\Hypertarget{class_rectangle_a75b1e77ef828ff8de86cfcf6b03bfadb}\label{class_rectangle_a75b1e77ef828ff8de86cfcf6b03bfadb}} 
+\index{Rectangle@{Rectangle}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!Rectangle@{Rectangle}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily Q\+String Rectangle\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+to\+String 
+
+\hyperlink{class_rectangle_a75b1e77ef828ff8de86cfcf6b03bfadb}{Rectangle\+::to\+String} -\/ Methode, gibt alle Eigenschaften des Rechtecks aus.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_graphics_object_ad985316df1516a5a7311161250b5e233}{Graphics\+Object}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_rectangle_a4d7f03c65f5e27a63a3299aac6da3954}\label{class_rectangle_a4d7f03c65f5e27a63a3299aac6da3954}} 
+\index{Rectangle@{Rectangle}!m\+\_\+graphics\+Rect@{m\+\_\+graphics\+Rect}}
+\index{m\+\_\+graphics\+Rect@{m\+\_\+graphics\+Rect}!Rectangle@{Rectangle}}
+\subsubsection{\texorpdfstring{m\+\_\+graphics\+Rect}{m\_graphicsRect}}
+{\footnotesize\ttfamily Q\+Graphics\+Rect\+Item$\ast$ Rectangle\+::m\+\_\+graphics\+Rect\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_rectangle_aa5a0b5d899df185e221e17d032472352}\label{class_rectangle_aa5a0b5d899df185e221e17d032472352}} 
+\index{Rectangle@{Rectangle}!m\+\_\+rectangle\+Counter@{m\+\_\+rectangle\+Counter}}
+\index{m\+\_\+rectangle\+Counter@{m\+\_\+rectangle\+Counter}!Rectangle@{Rectangle}}
+\subsubsection{\texorpdfstring{m\+\_\+rectangle\+Counter}{m\_rectangleCounter}}
+{\footnotesize\ttfamily unsigned long Rectangle\+::m\+\_\+rectangle\+Counter = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tranb/\+Desktop/\+Sciebo/\+Studium/\+Qt Projekte/\+Graphic\+Obj/\hyperlink{rectangle_8h}{rectangle.\+h}\item 
+C\+:/\+Users/tranb/\+Desktop/\+Sciebo/\+Studium/\+Qt Projekte/\+Graphic\+Obj/\hyperlink{rectangle_8cpp}{rectangle.\+cpp}\end{DoxyCompactItemize}

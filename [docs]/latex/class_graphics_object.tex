@@ -1,0 +1,163 @@
+\hypertarget{class_graphics_object}{}\section{Graphics\+Object Class Reference}
+\label{class_graphics_object}\index{Graphics\+Object@{Graphics\+Object}}
+
+
+The \hyperlink{class_graphics_object}{Graphics\+Object} class -\/ Klass für das Grafik Objekt abgeleitet von Q\+Object.  
+
+
+
+
+{\ttfamily \#include $<$graphicsobject.\+h$>$}
+
+Inheritance diagram for Graphics\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_graphics_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_graphics_object_a82fb630ff536190739e347b68716f603}{Graphics\+Object} (Q\+Object $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_graphics_object_a82fb630ff536190739e347b68716f603}{Graphics\+Object\+::\+Graphics\+Object}. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_graphics_object_ac5591ff2b8009451c593d1197ce7a162}{name} () const
+\begin{DoxyCompactList}\small\item\em Getter -\/ Methode für name. \end{DoxyCompactList}\item 
+void \hyperlink{class_graphics_object_a1b0c7c7f87e86833a9a23ab1a2b6f685}{set\+Name} (const Q\+String \&\hyperlink{class_graphics_object_ac5591ff2b8009451c593d1197ce7a162}{name})
+\begin{DoxyCompactList}\small\item\em set\+Name -\/ Methode \end{DoxyCompactList}\item 
+virtual Q\+Abstract\+Graphics\+Shape\+Item $\ast$ \hyperlink{class_graphics_object_ad898be2fdbcc4c57f908cdd6a3feaa44}{graphic\+Shape\+Item} () const
+\begin{DoxyCompactList}\small\item\em graphic\+Shape\+Item \end{DoxyCompactList}\item 
+virtual Q\+String \hyperlink{class_graphics_object_ad985316df1516a5a7311161250b5e233}{to\+String} ()
+\begin{DoxyCompactList}\small\item\em to\+String \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_graphics_object_aaa6fae9a6fac8fd912b3bf5b3c98fc26}{m\+\_\+name}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned long \hyperlink{class_graphics_object_a09b02b61e4f9c5aefed46c3625cb98ed}{m\+\_\+graphics\+Object\+Counter} = 0
+\begin{DoxyCompactList}\small\item\em Graphics\+Object\+Counter wird initialisiert. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_graphics_object}{Graphics\+Object} class -\/ Klass für das Grafik Objekt abgeleitet von Q\+Object. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_graphics_object_a82fb630ff536190739e347b68716f603}\label{class_graphics_object_a82fb630ff536190739e347b68716f603}} 
+\index{Graphics\+Object@{Graphics\+Object}!Graphics\+Object@{Graphics\+Object}}
+\index{Graphics\+Object@{Graphics\+Object}!Graphics\+Object@{Graphics\+Object}}
+\subsubsection{\texorpdfstring{Graphics\+Object()}{GraphicsObject()}}
+{\footnotesize\ttfamily Graphics\+Object\+::\+Graphics\+Object (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\hyperlink{class_graphics_object_a82fb630ff536190739e347b68716f603}{Graphics\+Object\+::\+Graphics\+Object}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graphics_object_ad898be2fdbcc4c57f908cdd6a3feaa44}\label{class_graphics_object_ad898be2fdbcc4c57f908cdd6a3feaa44}} 
+\index{Graphics\+Object@{Graphics\+Object}!graphic\+Shape\+Item@{graphic\+Shape\+Item}}
+\index{graphic\+Shape\+Item@{graphic\+Shape\+Item}!Graphics\+Object@{Graphics\+Object}}
+\subsubsection{\texorpdfstring{graphic\+Shape\+Item()}{graphicShapeItem()}}
+{\footnotesize\ttfamily Q\+Abstract\+Graphics\+Shape\+Item $\ast$ Graphics\+Object\+::graphic\+Shape\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+graphic\+Shape\+Item 
+
+\hyperlink{class_graphics_object_ad898be2fdbcc4c57f908cdd6a3feaa44}{Graphics\+Object\+::graphic\+Shape\+Item}.
+
+\begin{DoxyReturn}{Returns}
+
+
+0 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_polygon_aebf0f177dbc4da17a1822be5a0063b25}{Polygon}, \hyperlink{class_rectangle_aeafbe16d72e37bb155c78a122408d3dc}{Rectangle}, and \hyperlink{class_circle_a2c6dda8b50d9e19448d2e328b74430ce}{Circle}.
+
+\mbox{\Hypertarget{class_graphics_object_ac5591ff2b8009451c593d1197ce7a162}\label{class_graphics_object_ac5591ff2b8009451c593d1197ce7a162}} 
+\index{Graphics\+Object@{Graphics\+Object}!name@{name}}
+\index{name@{name}!Graphics\+Object@{Graphics\+Object}}
+\subsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily Q\+String Graphics\+Object\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter -\/ Methode für name. 
+
+Getter -\/ Methode für den Namen des \hyperlink{class_graphics_object}{Graphics\+Object} -\/ Objekt.
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graphics_object_a1b0c7c7f87e86833a9a23ab1a2b6f685}\label{class_graphics_object_a1b0c7c7f87e86833a9a23ab1a2b6f685}} 
+\index{Graphics\+Object@{Graphics\+Object}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Graphics\+Object@{Graphics\+Object}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily void Graphics\+Object\+::set\+Name (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{name }\end{DoxyParamCaption})}
+
+
+
+set\+Name -\/ Methode 
+
+Setter -\/ Methode für Name des \hyperlink{class_graphics_object}{Graphics\+Object} -\/ Objekt.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+$<$to\+Utf8 gibt die Q\+String werte als Schrift aus. \mbox{\Hypertarget{class_graphics_object_ad985316df1516a5a7311161250b5e233}\label{class_graphics_object_ad985316df1516a5a7311161250b5e233}} 
+\index{Graphics\+Object@{Graphics\+Object}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!Graphics\+Object@{Graphics\+Object}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily Q\+String Graphics\+Object\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+to\+String 
+
+\hyperlink{class_graphics_object_ad985316df1516a5a7311161250b5e233}{Graphics\+Object\+::to\+String}.
+
+\begin{DoxyReturn}{Returns}
+
+
+m\+\_\+name. 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_polygon_a588df36c92bfa626e0a16acb07162fa3}{Polygon}, \hyperlink{class_rectangle_a75b1e77ef828ff8de86cfcf6b03bfadb}{Rectangle}, and \hyperlink{class_circle_a2fea55f4310daa23eb8c103bdcdcabd6}{Circle}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_graphics_object_a09b02b61e4f9c5aefed46c3625cb98ed}\label{class_graphics_object_a09b02b61e4f9c5aefed46c3625cb98ed}} 
+\index{Graphics\+Object@{Graphics\+Object}!m\+\_\+graphics\+Object\+Counter@{m\+\_\+graphics\+Object\+Counter}}
+\index{m\+\_\+graphics\+Object\+Counter@{m\+\_\+graphics\+Object\+Counter}!Graphics\+Object@{Graphics\+Object}}
+\subsubsection{\texorpdfstring{m\+\_\+graphics\+Object\+Counter}{m\_graphicsObjectCounter}}
+{\footnotesize\ttfamily unsigned long Graphics\+Object\+::m\+\_\+graphics\+Object\+Counter = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Graphics\+Object\+Counter wird initialisiert. 
+
+\mbox{\Hypertarget{class_graphics_object_aaa6fae9a6fac8fd912b3bf5b3c98fc26}\label{class_graphics_object_aaa6fae9a6fac8fd912b3bf5b3c98fc26}} 
+\index{Graphics\+Object@{Graphics\+Object}!m\+\_\+name@{m\+\_\+name}}
+\index{m\+\_\+name@{m\+\_\+name}!Graphics\+Object@{Graphics\+Object}}
+\subsubsection{\texorpdfstring{m\+\_\+name}{m\_name}}
+{\footnotesize\ttfamily Q\+String Graphics\+Object\+::m\+\_\+name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tranb/\+Desktop/\+Sciebo/\+Studium/\+Qt Projekte/\+Graphic\+Obj/\hyperlink{graphicsobject_8h}{graphicsobject.\+h}\item 
+C\+:/\+Users/tranb/\+Desktop/\+Sciebo/\+Studium/\+Qt Projekte/\+Graphic\+Obj/\hyperlink{graphicsobject_8cpp}{graphicsobject.\+cpp}\end{DoxyCompactItemize}

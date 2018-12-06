@@ -1,0 +1,177 @@
+\hypertarget{class_main_window}{}\section{Main\+Window Class Reference}
+\label{class_main_window}\index{Main\+Window@{Main\+Window}}
+
+
+The \hyperlink{class_main_window}{Main\+Window} class -\/ \hyperlink{class_main_window}{Main\+Window} Klasse.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+Inheritance diagram for Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_a965877b0ba4c3f18035232a9eb7b98e0}{recieve\+Mouse\+Position} (Q\+PointF mouse\+\_\+position)
+\begin{DoxyCompactList}\small\item\em recieve\+Mouse\+Position -\/ Slot für das Empfangen der Maus Position. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a3ea2675e6bd470873d7569db47a5bd2a}{recieve\+Mouse\+Clicked\+Position} (Q\+PointF mouse\+\_\+clicked\+\_\+position)
+\begin{DoxyCompactList}\small\item\em recieve\+Mouse\+Clicked\+Position -\/ Slot für das Empfangen der Maus Position, wenn auf der Scene geklickt wird. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_aee13312aef8f1fc2a4c7ff2f8837234c}{recieve\+Focused\+Item} (qreal x, qreal y, qreal height, qreal width)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{Main\+Window} (Q\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_main_window}{Main\+Window}. \end{DoxyCompactList}\item 
+\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{Main\+Window\+::$\sim$\+Main\+Window} ist der Dekonstruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_main_window}{Main\+Window} class -\/ \hyperlink{class_main_window}{Main\+Window} Klasse. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}} 
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Main\+Window()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\hyperlink{class_main_window}{Main\+Window}. 
+
+\hyperlink{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{Main\+Window\+::\+Main\+Window}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+$<$User Interface wird aufgerufen
+
+$<$\hyperlink{class_tools}{Tools} -\/ Objekt wird erstellt und Default -\/ Werte werden gesetzt.
+
+$<$Setzt Systemtypisches Icon für Menüpunkt \char`\"{}\+Open\char`\"{}
+
+$<$Setzt Systemtypisches Icon für Menüpunkt \char`\"{}\+Save\char`\"{}
+
+$<$Setzt Systemtypische Shortcut für den Menüpunkt \char`\"{}\+Open\char`\"{}
+
+$<$Setzt Systemtypische Shortcut für den Menüpunkt \char`\"{}\+Save\char`\"{}
+
+$<$Setzt Systemtypische Shortcut für den Menüpunkt \char`\"{}\+Print\char`\"{}
+
+Damit das hier funktioniert, muss erst ein Label dem Central\+Widget hinzugefügt werden. (im G\+UI -\/ Creator)
+
+$<$Das Label wird hiermit der Statusbar beigefügt.
+
+$<$Graphic\+Scene -\/ Objekt wird erstellt
+
+$<$Das Graphic\+Scene -\/ Objekt wird dem graphics\+View -\/ Widget übergeben
+
+$<$Größe der Graphic\+Scene wird gesetzt.
+
+$<$Graut Add\+Object -\/ Button aus.
+
+$<$Macht Positionen / Dimensionen Feld unsichtbar (Default)
+
+$<$Graut Menüpunkt Add\+Object aus
+
+connect Verbindung zwischen dem tool\+Object aus \hyperlink{class_main_window}{Main\+Window} und dem eigenem Widget für Zeichenwerkzeuge Richtung\+: tool\+Object zu eigenem Widget.
+
+connect Verbindung zwischen dem eigenem Widget für Zeichenwerkzeuge und dem tool\+Object aus \hyperlink{class_main_window}{Main\+Window} Richtung\+: eigenes Widget zu tool\+Object
+
+connect Verbindung zwischen tool\+Object und dem eigenem Widget zur Farbauswahl für die Rahmenfarbe Richtung\+: tool\+Object zu eigenem Widget
+
+connect Verbindung zwischen eigenem Widget zur Farbauswahl für die Rahmenfarbe und dem tool\+Object Richtung\+: eigenes Widget zu tool\+Object
+
+connect Verbindung zwischen dem tool\+Object und dem eigenem Widget zur Farbauswahl für die Füllfarbe Richtung\+: tool\+Object zu eigenem Widget
+
+connect Verbindung zwischen dem eigenem Widget für die Füllfarbe zu dem tool\+Object Richtung\+: eigenes Widget zu tool\+Object.
+
+connect Verbindung zwischen dem eigenem Widget und dem \hyperlink{class_main_window}{Main\+Window}. Richtung\+: eigenes Widget zu \hyperlink{class_main_window}{Main\+Window}.
+
+connect Verbindung zwischen der Scene und dem \hyperlink{class_main_window}{Main\+Window} (Cursor\+Koordinaten werden an Statusbar gesendet) Richtung\+: Scene zu \hyperlink{class_main_window}{Main\+Window}
+
+connect Verbindung zwischen dem \hyperlink{class_drawing_tool_selector}{Drawing\+Tool\+Selector} und der Graphicsscene. Richtung\+: \hyperlink{class_drawing_tool_selector}{Drawing\+Tool\+Selector} zu Scene
+
+connect Verbindung zwischen der Scene und dem \hyperlink{class_main_window}{Main\+Window} für die Mausposition wenn mit der Maus auf die Scene geklickt wird. Richtung\+: Scene zu \hyperlink{class_main_window}{Main\+Window} (funktioniert nur, wenn Polygon\+Tool ausgewählt wurde.)
+
+connect Verbindung zwischen dem Drawin\+Tool\+Selector und dem Tool\+Object für die Wahl zwischen Grundriss und Moebel. Richtung\+: Drawingtool\+Selector zu tool\+Object\mbox{\Hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}} 
+\index{Main\+Window@{Main\+Window}!````~Main\+Window@{$\sim$\+Main\+Window}}
+\index{````~Main\+Window@{$\sim$\+Main\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{$\sim$\+Main\+Window()}{~MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::$\sim$\+Main\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{Main\+Window\+::$\sim$\+Main\+Window} ist der Dekonstruktor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_window_aee13312aef8f1fc2a4c7ff2f8837234c}\label{class_main_window_aee13312aef8f1fc2a4c7ff2f8837234c}} 
+\index{Main\+Window@{Main\+Window}!recieve\+Focused\+Item@{recieve\+Focused\+Item}}
+\index{recieve\+Focused\+Item@{recieve\+Focused\+Item}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{recieve\+Focused\+Item}{recieveFocusedItem}}
+{\footnotesize\ttfamily void Main\+Window\+::recieve\+Focused\+Item (\begin{DoxyParamCaption}\item[{qreal}]{x,  }\item[{qreal}]{y,  }\item[{qreal}]{height,  }\item[{qreal}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_main_window_a3ea2675e6bd470873d7569db47a5bd2a}\label{class_main_window_a3ea2675e6bd470873d7569db47a5bd2a}} 
+\index{Main\+Window@{Main\+Window}!recieve\+Mouse\+Clicked\+Position@{recieve\+Mouse\+Clicked\+Position}}
+\index{recieve\+Mouse\+Clicked\+Position@{recieve\+Mouse\+Clicked\+Position}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{recieve\+Mouse\+Clicked\+Position}{recieveMouseClickedPosition}}
+{\footnotesize\ttfamily void Main\+Window\+::recieve\+Mouse\+Clicked\+Position (\begin{DoxyParamCaption}\item[{Q\+PointF}]{mouse\+\_\+clicked\+\_\+position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+recieve\+Mouse\+Clicked\+Position -\/ Slot für das Empfangen der Maus Position, wenn auf der Scene geklickt wird. 
+
+\hyperlink{class_main_window_a3ea2675e6bd470873d7569db47a5bd2a}{Main\+Window\+::recieve\+Mouse\+Clicked\+Position} -\/ Methode, um die gewünschten Eckpunkte des Polygons auf die Scene zu malen und die Punkte in die Polygon\+Liste hinzuzufügen. Diese wird später zum Verbinden der Punkte benötigt.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+clicked\+\_\+position} & \\
+\hline
+\end{DoxyParams}
+$<$Setzt einen Punkt an der gewünschten Position
+
+$<$Fügt die Koordinaten der \char`\"{}\+Hilfskreise\char`\"{} in die Liste ein.
+
+$<$Fügt die \char`\"{}\+Hilfskreise\char`\"{} in die dafür vorhandene Liste.
+
+$<$Malt den Punkt auf die Scene \mbox{\Hypertarget{class_main_window_a965877b0ba4c3f18035232a9eb7b98e0}\label{class_main_window_a965877b0ba4c3f18035232a9eb7b98e0}} 
+\index{Main\+Window@{Main\+Window}!recieve\+Mouse\+Position@{recieve\+Mouse\+Position}}
+\index{recieve\+Mouse\+Position@{recieve\+Mouse\+Position}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{recieve\+Mouse\+Position}{recieveMousePosition}}
+{\footnotesize\ttfamily void Main\+Window\+::recieve\+Mouse\+Position (\begin{DoxyParamCaption}\item[{Q\+PointF}]{mouse\+\_\+position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+recieve\+Mouse\+Position -\/ Slot für das Empfangen der Maus Position. 
+
+\hyperlink{class_main_window_a965877b0ba4c3f18035232a9eb7b98e0}{Main\+Window\+::recieve\+Mouse\+Position}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+position} & \\
+\hline
+{\em mouse\+\_\+position} & Der Slot der vom dem Signal(send\+Mouse\+Position) aus Graphicsscene die Mouse Position empfängt. Dem Label auf der Statusbar werden dann die Maus Positionen beigefügt. \\
+\hline
+\end{DoxyParams}
+$<$Setzt den Text des Labels
+
+$<$Fügt x\+Koordinate hinzu
+
+$<$Fügt y\+Koordinate hinzu 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tranb/\+Desktop/\+Sciebo/\+Studium/\+Qt Projekte/\+Graphic\+Obj/\hyperlink{mainwindow_8h}{mainwindow.\+h}\item 
+C\+:/\+Users/tranb/\+Desktop/\+Sciebo/\+Studium/\+Qt Projekte/\+Graphic\+Obj/\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}\end{DoxyCompactItemize}
